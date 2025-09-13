@@ -37,15 +37,23 @@ async def upload_to_s3(file_path=None, file_url=None, prediction_id=None):
 
 # 1. Создаем prediction
 prediction = client.predictions.create(
-    "bytedance/seedance-1-pro",
+    "ibm-granite/granite-3.3-8b-instruct",
     input={
-        "fps": 24,
-        "prompt": "The sun rises slowly between tall buildings. [Ground-level follow shot] Bicycle tires roll over a dew-covered street at dawn. The cyclist passes through dappled light under a bridge as the entire city gradually wakes up.",
-        "duration": 3,
-        "resolution": "480p",
-        "aspect_ratio": "16:9",
-        "camera_fixed": False
-    }
+        "tools": [],
+        "top_k": 50,
+        "top_p": 0.9,
+        "prompt": "How is perplexity measured for LLMs and why is it useful?",
+        "stream": False,
+        "messages": [],
+        "documents": [],
+        "max_tokens": 512,
+        "min_tokens": 0,
+        "temperature": 0.6,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "chat_template_kwargs": {},
+        "add_generation_prompt": True,
+    },
 )
 
 # prediction.status будет "starting", "processing", "succeeded" и т.п.

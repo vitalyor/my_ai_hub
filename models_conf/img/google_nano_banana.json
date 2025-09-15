@@ -1,0 +1,26 @@
+{
+  "kind": "img",
+  "model_id": "google/nano-banana",
+  "label": "nano-banana",
+  "controls": [
+    {
+      "key": "prompt",
+      "type": "text",
+      "default": "Make the sheets in the style of the logo. Make the scene natural. "
+    },
+    {
+      "key": "image_input",
+      "type": "text",
+      "default": "[\"https://replicate.delivery/pbxt/NbYIclp4A5HWLsJ8lF5KgiYSNaLBBT1jUcYcHYQmN1uy5OnN/tmpcqc07f_q.png\",\"https://replicate.delivery/pbxt/NbYId45yH8s04sptdtPcGqFIhV7zS5GTcdS3TtNliyTAoYPO/Screenshot%202025-08-26%20at%205.30.12%E2%80%AFPM.png\"]"
+    },
+    {
+      "key": "output_format",
+      "type": "select",
+      "default": "jpg",
+      "values": [
+        "jpg",
+        "png"
+      ]
+    }
+  ]
+}

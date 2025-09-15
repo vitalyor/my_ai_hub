@@ -37,7 +37,7 @@ async def upload_to_s3(file_path=None, file_url=None, prediction_id=None):
 
 # 1. Создаем prediction
 prediction = client.predictions.create(
-    "ibm-granite/granite-3.3-8b-instruct",
+    model="ibm-granite/granite-3.3-8b-instruct",
     input={
         "tools": [],
         "top_k": 50,

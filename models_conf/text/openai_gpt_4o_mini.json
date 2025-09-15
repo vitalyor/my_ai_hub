@@ -1,0 +1,75 @@
+{
+  "kind": "text",
+  "model_id": "openai/gpt-4o-mini",
+  "label": "gpt-4o-mini",
+  "controls": [
+    {
+      "key": "top_p",
+      "type": "int",
+      "default": 1,
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "prompt",
+      "type": "text",
+      "default": "",
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "messages",
+      "type": "text",
+      "default": "[]",
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "image_input",
+      "type": "text",
+      "default": "[]",
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "temperature",
+      "type": "slider",
+      "default": 1,
+      "enabled": true,
+      "hidden": false,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    {
+      "key": "system_prompt",
+      "type": "text",
+      "default": "You are a helpful assistant.",
+      "enabled": true,
+      "hidden": false
+    },
+    {
+      "key": "presence_penalty",
+      "type": "int",
+      "default": 0,
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "frequency_penalty",
+      "type": "int",
+      "default": 0,
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "max_completion_tokens",
+      "type": "int",
+      "default": 4096,
+      "enabled": true,
+      "hidden": false,
+      "min": 1024,
+      "max": 8192
+    }
+  ]
+}

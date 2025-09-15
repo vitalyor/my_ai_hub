@@ -1,0 +1,47 @@
+{
+  "kind": "text",
+  "model_id": "openai/gpt-5",
+  "label": "gpt-5",
+  "controls": [
+    {
+      "key": "prompt",
+      "type": "text",
+      "default": "",
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "messages",
+      "type": "text",
+      "default": "[]",
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "verbosity",
+      "type": "select",
+      "default": "medium",
+      "enabled": true,
+      "hidden": false,
+      "values": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    {
+      "key": "image_input",
+      "type": "text",
+      "default": "[]",
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "reasoning_effort",
+      "type": "text",
+      "default": "minimal",
+      "enabled": false,
+      "hidden": true
+    }
+  ]
+}

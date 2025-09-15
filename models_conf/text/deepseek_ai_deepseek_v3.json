@@ -1,0 +1,54 @@
+{
+  "kind": "text",
+  "model_id": "deepseek-ai/deepseek-v3",
+  "label": "deepseek-v3",
+  "controls": [
+    {
+      "key": "top_p",
+      "type": "int",
+      "default": 1,
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "prompt",
+      "type": "text",
+      "default": "",
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "max_tokens",
+      "type": "int",
+      "default": 1024,
+      "enabled": true,
+      "hidden": false,
+      "min": 1024,
+      "max": 20480
+    },
+    {
+      "key": "temperature",
+      "type": "slider",
+      "default": 0.6,
+      "enabled": true,
+      "hidden": false,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    {
+      "key": "presence_penalty",
+      "type": "int",
+      "default": 0,
+      "enabled": false,
+      "hidden": true
+    },
+    {
+      "key": "frequency_penalty",
+      "type": "int",
+      "default": 0,
+      "enabled": false,
+      "hidden": true
+    }
+  ]
+}
